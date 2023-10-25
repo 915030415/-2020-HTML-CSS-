@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        height: auto;
+        background-color: red;
+        margin-top: 200px;
+    }
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        float: left;
+        margin-left: 100px;
+        margin-top: 50px;
+        /* margin: auto; 0px */
+    }
+    .clearfix::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>
