@@ -1,3 +1,11 @@
+<!--
+ * @Author: 915030415@qq.com 915030415@qq.com
+ * @Date: 2019-05-17 16:40:24
+ * @LastEditors: 915030415@qq.com 915030415@qq.com
+ * @LastEditTime: 2023-10-26 09:00:23
+ * @FilePath: \前端\复习资料\袁老师 《2020 前端开发 HTML+CSS 宝典》课程代码文件\3. CSS基础\10. 常规流\test3.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,26 +17,34 @@
         body{
             margin: 0;
         }
+        .box{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
         .parent{
-            background: lightblue;
-            height: 300px;
-            margin-top:500px;
-            /* border: 1px solid red; */
-            /* padding-top: 50px; */
+            display: inline-block;
+            /* margin-left: 300px; */
+            width: 700px;
+          background-color: black;
+          border:1px solid red;
         }
         .child{
-    
             height: 100px;
             background: red;
-            margin-top: 50px;
-            width: 200px;
+            /* width: 500px; */
+            /* margin-left:-200px;
+            margin-right:-200px; */
+            margin-left:-1px;
+            border:1px solid black ;
         }
     </style>
 </head>
 <body>
+    <div class = "box"></div>
     <div class="parent">
-        <div class="child">111</div>
-        
+        <div class="child"></div>
     </div>
 </body>
 </html>

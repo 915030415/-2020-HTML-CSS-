@@ -1,3 +1,11 @@
+<!--
+ * @Author: 915030415@qq.com 915030415@qq.com
+ * @Date: 2019-05-23 16:37:24
+ * @LastEditors: 915030415@qq.com 915030415@qq.com
+ * @LastEditTime: 2023-12-07 23:59:42
+ * @FilePath: \前端\复习资料\袁老师 《2020 前端开发 HTML+CSS 宝典》课程代码文件\5. CSS进阶\6. [扩展]行高的取值\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,13 +18,16 @@
         .container {
             /* 行高为字体大小的两倍 */
             /* 先计算像素值，再继承 */
-            /* line-height: 2em; */
+            /* line-height: 2em; */  这里 先根据自身的 fontsize 计算出 2em的值 然后 子元素 再去继承 line-height 这样就会出问题 这样子元素的 line-height的值 就不是根据 自身的font size 值计算得出来的 如果 父级的 font size 设置 很大或很小 就会出问题
+
+ 这里继承的意思 是 子元素 去继承 line-height  
 
             /* 行高为字体大小的两倍 */
             /* 先继承，再计算 */
             line-height: 2;
         }
         .p1{
+            
             font-size: 40px;
         }
 

@@ -7,24 +7,34 @@
     <title>Document</title>
     <style>
         .container{
-            float: left;
+            /* margin-top: 100px; */
+            /* float: left; */
+            overflow: hidden;
             background: #008c8c;
-            position: relative;
+            margin-left: 10px;
+            /* height: 200px; */
+            width: 600px;
+            border: 10px solid black;
+            /* box-sizing: border-box; */
+            /* position: relative; */
         }
 
         .item{
-            /* float: left; */
-            position: absolute;
-            left: 0;
-            top: 0;
-            margin: 20px;
+            /* margin-top: 100px; */
+            float: left;
+            /* position: absolute; */
+            /* left: 0;
+            top: 0; */
+            /* margin: 20px; */
             width: 200px;
             height: 200px;
             background: red;
+
         }
     </style>
 </head>
 <body>
+    <div class="item"></div>
     <div class="container">
         <div class="item"></div>
     </div>
