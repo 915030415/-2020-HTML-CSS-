@@ -1,48 +1,29 @@
-<!--
- * @Author: 915030415@qq.com 915030415@qq.com
- * @Date: 2019-05-23 15:00:26
- * @LastEditors: 915030415@qq.com 915030415@qq.com
- * @LastEditTime: 2024-12-04 17:42:01
- * @FilePath: \前端\复习资料\袁老师 《2020 前端开发 HTML+CSS 宝典》课程代码文件\5. CSS进阶\4. 布局\两栏布局.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-      .clearfix::after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-      .container {
-        background: lightblue;
-        width: 90%;
-        margin: 0 auto;
+      .a {
+        padding: 20px;
+        overflow: hidden;
+        background-color: aqua;
       }
       .aside {
-        float: left;
-        background: #008c8c;
-        color: #fff;
         width: 300px;
+        float: left;
+        background-color: red;
         margin-right: 30px;
       }
-
       .main {
         overflow: hidden;
-        /* display: inline; */
-        /* 创建BFC的元素，它的边框盒不会与浮动元素重叠 */
-        background: gray;
+        background-color: yellow;
       }
     </style>
   </head>
-
   <body>
-    <div class="container clearfix">
+    <div class="a">
       <aside class="aside">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores,
         odio iusto obcaecati voluptate, quisquam sit vel mollitia qui vitae sint nobis est

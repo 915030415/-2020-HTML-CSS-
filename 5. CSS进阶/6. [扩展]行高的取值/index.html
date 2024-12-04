@@ -2,50 +2,57 @@
  * @Author: 915030415@qq.com 915030415@qq.com
  * @Date: 2019-05-23 16:37:24
  * @LastEditors: 915030415@qq.com 915030415@qq.com
- * @LastEditTime: 2023-12-07 23:59:42
+ * @LastEditTime: 2024-12-04 17:29:22
  * @FilePath: \前端\复习资料\袁老师 《2020 前端开发 HTML+CSS 宝典》课程代码文件\5. CSS进阶\6. [扩展]行高的取值\index.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-        .container {
-            /* 行高为字体大小的两倍 */
-            /* 先计算像素值，再继承 */
-            /* line-height: 2em; */  这里 先根据自身的 fontsize 计算出 2em的值 然后 子元素 再去继承 line-height 这样就会出问题 这样子元素的 line-height的值 就不是根据 自身的font size 值计算得出来的 如果 父级的 font size 设置 很大或很小 就会出问题
+      body {
+        font-size: 10px;
+      }
+      .container {
+        /* font-size: 40px; */
+        /* 行高为字体大小的两倍 */
+        /* 先计算像素值，再继承 */
+        line-height: 2em;
+        /* 这里 先根据自身的 fontsize 计算出 2em的值 然后 子元素 再去继承 line-height 这样就会出问题 这样子元素的 line-height的值 就不是根据 自身的font size 值计算得出来的 如果 父级的 font size 设置 很大或很小 就会出问题
 
- 这里继承的意思 是 子元素 去继承 line-height  
+ 这里继承的意思 是 子元素 去继承 line-height   */
 
-            /* 行高为字体大小的两倍 */
-            /* 先继承，再计算 */
-            line-height: 2;
-        }
-        .p1{
-            
-            font-size: 40px;
-        }
+        /* 行高为字体大小的两倍 */
+        /* 先继承，再计算 */
+        /* line-height: 2; */
+      }
+      .p1 {
+        font-size: 40px;
+      }
 
-        .p2{
-            font-size: 12px;
-        }
+      .p2 {
+        font-size: 12px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <p class="p1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae sed doloremque sapiente? Explicabo, quidem itaque, repudiandae fugiat impedit suscipit, amet inventore necessitatibus pariatur iste quisquam laborum hic aperiam ab.
-        </p>
-        <p class="p2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur earum corporis, eius, ut ratione nihil exercitationem cum voluptatibus et velit repellat debitis esse praesentium odio provident ex totam, delectus expedita.
-        </p>
+      <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae sed
+        doloremque sapiente? Explicabo, quidem itaque, repudiandae fugiat impedit
+        suscipit, amet inventore necessitatibus pariatur iste quisquam laborum hic aperiam
+        ab.
+      </p>
+      <p class="p2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur earum corporis,
+        eius, ut ratione nihil exercitationem cum voluptatibus et velit repellat debitis
+        esse praesentium odio provident ex totam, delectus expedita.
+      </p>
     </div>
-</body>
-
+  </body>
 </html>

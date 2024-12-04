@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Examples</title>
+    <style>
+      .static {
+        position: static;
+        background-color: lightgray;
+      }
+      .relative {
+        position: relative;
+        top: 10px;
+        left: 20px;
+        background-color: lightblue;
+      }
+      .absolute {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background-color: lightcoral;
+      }
+      .fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+      }
+      .sticky {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0px;
+        background-color: lightyellow;
+        padding: 10px;
+      }
+      .container {
+        height: 2000px; /* For scrolling */
+      }
+      .a {
+        height: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky">Sticky Element</div>
+    <div class="a"></div>
+  </body>
+</html>
